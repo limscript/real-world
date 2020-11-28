@@ -1,5 +1,5 @@
 /**
- * nuxt.js配置文件
+ * nuxt.js配置文件 token: 50e3223242f7484520cbcf42995661d1420231bc
  */
 
 module.exports = {
