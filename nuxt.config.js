@@ -45,7 +45,7 @@ module.exports = {
               component: resolve(__dirname, 'pages/editor'),
             },
             {
-              path: '/article', // 文章
+              path: '/article/:slug', // 文章
               name: 'article',
               component: resolve(__dirname, 'pages/article'),
             },
@@ -53,5 +53,14 @@ module.exports = {
         }
       ])
     }
-  }
+  },
+  server: {
+    host: '0.0.0.0',
+    port: 3000
+  },
+  // 注册插件
+  plugins: [
+    '~/plugins/request.js',
+    '~/plugins/dayjs.js'
+  ]
 }
